@@ -1,0 +1,21 @@
+*{font-family:"微软雅黑";}
+/*p{font-weight:bold;}*/
+.bold{
+  font-weight:normal;
+  margin-right:20px;
+}
+.one{margin-bottom:-10px;
+font-weight:bold;}
+.head{
+  width:150px;
+  background:#6495ED;
+  color:#fff;
+  float:left;
+  height:750px;
+  text-align:center;
+  line-height:150px;
+}
+.right{
+  float:left;
+  margin:10px 20px;
+}
