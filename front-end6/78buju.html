@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>78buju</title>
+	<style>
+		*{
+  margin:0;
+  padding:0;
+  font-family:"微软雅黑";
+/*   box-sizing: border-box; */
+}
+header{
+/*   width:100%; */
+  height:70px;
+  background:#222;
+}
+.hea{
+  width:960px;
+  height:60px;
+  margin:0 auto;
+  color:#fff; 
+  position:relative;
+}
+.logo{
+  line-height:60px;
+  font-size:20px;
+}
+.hea nav{ 
+  position:absolute;
+  right:0;
+  top:5px;
+}
+.hea nav a{
+  color:#fff;
+  margin:0 3px;
+  font-size:14px;
+}
+.banner{
+   height:300px;
+   width:100%;
+  
+   position:relative;
+}
+.banner .ban{
+  height:300px;
+  background:#5f5;
+}
+.banner .btn{
+ width:960px; 
+ color:#fff; 
+ position:absolute;
+ left:50%;
+ margin-left:-480px;
+ bottom:10px;
+ text-align:right;
+/*  background-color:#f00; */
+}
+.banner .btn a{
+  color:#222;
+  text-decoration:none;
+  display:inline-block;
+  width:30px;
+  height:35px;
+  opacity:0.8;
+  background-color:rgb(255,255,255);
+  line-height:35px;
+  text-align:center;
+  border:1px solid #111;
+  vertical-align:bottom;
+}
+.banner .btn .act{
+   width:30px;
+   height:35px;
+   opacity:1;
+   background-color:rgb(255,255,255);
+   border:1px solid #111;
+   text-align:center; 
+   padding-top:15px;
+}
+.banner .btn a:hover{
+  opacity:1;
+  padding-top:15px;
+}
+.nav{
+  margin-top:20px;
+  height:51px;
+  width:100%;
+  border-bottom:1px solid #aaa;
+  position:relative;
+  z-index:1;
+}
+.nav .thr{
+  position:absolute;
+  width:960px;
+  left:50%;
+  margin-left:-480px;
+}
+.thr a{
+  display:inline-block;
+  width:100px;
+  height:50px;
+  text-align:center;
+  line-height:50px;
+  border:1px solid #aaa;
+  border-bottom:0;
+  color:#222;
+  text-decoration:none;
+  border-radius:20px 20px 0 0;
+  background-color:#dde;
+  margin:0 -3px;
+}
+.nav .thr .tt{
+  background-color:#fff;
+  z-index:99;
+  height:51px;
+}
+.nav .thr a:hover{
+  background-color:#fff;
+  z-index:99;
+  height:51px;
+}
+.bro{
+width:960px;
+  margin:0 auto;
+  font-size:14px;
+
+}
+.bro .all{
+ display: -webkit-flex;
+ display: flex;
+
+ margin:10px -10px 10px 0 ;
+/*align-items:center;*/
+ /* justify-content:center;*/
+}
+.col1,
+.col2,
+.col3,
+.col4{
+  /*height:175px;*/
+  /*line-height:175px;*/
+  border:1px solid #aaa;
+  margin-right:10px;
+  text-align:center;
+  padding:80px;
+}
+.col3{ 
+ 
+  flex: 1;
+  
+}
+.col4{ 
+  
+  flex: 1;
+
+}
+.col2{ 
+ 
+  flex: 1.5;
+
+}
+.col1{
+ 
+  flex: 1;
+ 
+}
+footer{
+  /*margin-top:280px;*/
+  height:100px;
+  width:100%;
+  background-color:#333;
+  color:#fff;
+  text-align:center;
+  padding-top:20px;
+  font-size:14px;
+}
+	</style>
+</head>
+<body>
+	<!-- 导航 -->
+<header>
+<!--   容器 -->
+  <div class="hea">
+<!--    logo -->
+    <div class="logo">Logo</div>
+    <nav>
+      <a href="#">Github</a>
+      <a href="#">Register</a>
+      <a href="#">Login</a>
+    </nav>
+  </div>
+</header>
+<!-- banner -->
+<section class="banner">
+<!-- 按钮 -->
+  <div class="btn">
+    <a href="#">1</a>
+    <a href="#" class="act">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+  </div>
+  <!--   lunbo -->
+  <div class="ban"></div>
+</section>
+<!-- 小导航 -->
+<section class="nav">
+  <div class="thr">
+    <a href="#" class="tt">HOME</a>
+    <a href="#" >PROFILE</a>
+    <a href="#">ABOUT</a>
+  </div>
+</section>
+<section class="bro">
+<!--   第一行 -->
+  <div class="all">
+      <div class="col2">This is Content 1</div>
+      <div class="col2">MaybeContent 2</div>
+      <div class="col1">Content 3</div>
+  </div>
+    <div class="all">
+      <div class="col3">Content 4</div>
+      <div class="col3">Content 5</div>
+      <div class="col3">Content 6</div>
+      <div class="col3">Content 7</div>
+  </div>
+  <div class="all">
+      <div class="col3">Content 8</div>
+      <div class="col3">Content 9</div>
+      <div class="col3">Content 10</div>
+  </div>
+</section>
+<footer class="fot">
+  &copy; 2018 ife.baidu.com
+</footer>
+</body>
+</html>

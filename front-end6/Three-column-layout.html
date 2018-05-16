@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏布局,右边左边固定，中间自适应化</title>
+	<style>
+	*{margin:0;
+ padding:0;
+ -webkit-box-sizing:border-box;/*兼容浏览器chrome safari*/
+  -moz-box-sizing:border-box;/*兼容firefox*/
+  box-sizing: border-box;
+  color:#aaa;}
+
+
+/* float */
+/*.lef{
+  width:200px;
+  background:#f00;
+ float: left; 
+  height:300px;
+}
+.con{
+  background:#0f0;
+  margin-right:200px;
+  margin-left:200px;
+  height:300px;
+}
+.rig{
+  width:200px;
+  background:#00f;
+  float: right;
+  height:300px;
+}*/
+
+/* position */
+/*.lef{
+  position:absolute;
+  top:0;
+  left:0;
+  background:#f00;
+  width:200px;
+}
+.rig{
+  position:absolute;
+  top:0;
+  right:0;
+  background:#0f0;
+  width:200px;
+}
+.con{
+  position:absolute;
+  top:0;
+  left:200px;
+  right:200px;
+  background:#00f;
+}*/
+
+
+/*flex*/
+ /*.main{
+  display:flex;
+}
+.lef{
+  flex:none;
+  width:200px;
+  background:#f00;
+}
+.rig{
+  flex:none;
+  width:200px;
+  background:#00f;
+}
+.con{
+  flex:1;
+  background:#0f0;
+} */
+.main{
+  display:flex;
+  /*margin:10px 10px 0 -10px;*/height:175px;  
+}
+.lef{
+  flex:1;
+  margin-right:10px;
+  background:#f00;
+}
+.rig{
+  flex:2;
+margin-right:10px;
+  background:#00f;
+}
+.con{
+/*margin-right:10px;*/
+  flex:1;
+  background:#0f0;
+}
+	</style>
+</head>
+<body>
+	<div class="main">
+  <div class="lef">lef　说起两列布局，最常见的就是使用float来实现。float浮动布局的缺点是浮动后会造成文本环绕等效果，以及需要及时清除浮动。设置左左浮动，或设置左右浮动（这是需要确定父级元素的宽度）说起两列布局，最常见的就是使用float来实现。float浮动布局的缺点是浮动后会造成文本环绕等效果，以及需要及时清除浮动。设置左左浮动</div>  
+  <div class="rig">rig　设置左左浮动，或设置左右浮动（这是需要确定父级元素的宽度）说起两列布局，最常见的就是使用float来实现。float浮动布局的缺点是浮动后会造成文本环绕等效果，以及需要及时清除浮动。</div>
+<!--  中间栏要放在最后  -->
+  <div class="con">设置左左浮动，或设置左右浮动（这是需要确定父级元素的宽度）说起两列布局，最常见的就是使用float来实现。float浮动布局的缺点是浮动后会造成文本环绕等效果，以及需要及时清除浮动。设置左左浮动，或设置左右浮动（这是需要确定父级元素的宽度）说起两列布局，最常见的就是使用float来实现。</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>两栏布局</title>
+	<style>
+				*{margin:0;
+		 padding:0;
+		 -webkit-box-sizing:border-box;/*兼容浏览器chrome safari*/
+		  -moz-box-sizing:border-box;/*兼容firefox*/
+		  box-sizing: border-box;
+		  color:#fff;}
+
+
+		/* float */
+		.lef{
+		  width:30%;
+		/*   height:40px; */
+		  background:#0f0;
+		  float:left;
+		}
+		.rig{
+		/*   height:40px; */
+		  background:#00f;
+		}
+
+
+		/* position */
+		/*.main{
+		  position:relative;
+		}
+		.lef{
+		  position:absolute;
+		  left:0;
+		  top:0;
+		  background:#0f0;
+		  width:30%;
+		}
+		 .rig{
+		  position:absolute;
+		   background:#00f;
+		   margin-left:30%;
+		} */
+
+
+		/* flexbox */
+		/* .main{
+		  display:flex;
+		  display: -webkit-flex;
+		}
+		.lef{
+		  -webkit-flex:none;
+		  flex:none;
+		  width:30%;
+		  background:#0f0;
+		}
+		.rig{
+		  -webkit-flex:none;
+		  flex:none;
+		  width:70%;
+		  background:#00f;
+		} */
+	</style>
+</head>
+<body>
+	<div class="main">
+  <div class="lef">lef　说起两列布局，最常见的就是使用float来实现。float浮动布局的缺点是浮动后会造成文本环绕等效果，以及需要及时清除浮动。</div>
+  <div class="rig">rig　设置左左浮动，或设置左右浮动（这是需要确定父级元素的宽度）说起两列布局，最常见的就是使用float来实现。float浮动布局的缺点是浮动后会造成文本环绕等效果，以及需要及时清除浮动。设置左左浮动，或设置左右浮动（这是需要确定父级元素的宽度）说起两列布局，最常见的就是使用float来实现。float浮动布局的缺点是浮动后会造成文本环绕等效果，以及需要及时清除浮动。</div>
+</div>
+</body>
+</html>
