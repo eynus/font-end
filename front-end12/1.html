@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+  margin:0;
+  padding:0;
+}
+.all{
+  height:100vh;
+  width:100vw;
+  background:#f00;
+  position:relative;
+  overflow: hidden;
+}
+.left{
+  width:100px;
+  height:100%;
+  background:#0f0;
+  position:fixed;
+  top:0;
+  left:0;
+}
+.mid{
+  width:250px;
+  height:100%;
+  background:#00f;
+  position:absolute;
+  left:100px;
+  top:0;
+  background:#fff;
+  overflow:hidden;
+}
+.top{
+/*   height:1000px; */
+  
+  padding:30px;
+  position:abolute;
+  top:0;
+  bottom: 0;
+  width:190px;
+}
+.top__lun{
+   overflow:auto;
+   height: 100%;
+}
+.fot{
+  height:50px;
+  width:250px;
+  background:#00f;
+  position:absolute;
+  bottom:20px;
+  left:0px;
+}
+	</style>
+</head>
+<body>
+	<div class="all">
+<!--   左 -->
+  <div class="left"></div>
+<!--   中 -->
+  <div class="mid">
+    <div class="top">
+      <div class="top__lun">
+        <p>2</p><p>2</p><p>2</p><p>2</p><p>2</p><p>2</p><p>2</p><p>2</p>
+       <p>2</p><p>2</p><p>2</p><p>2</p><p>2</p><p>2</p><p>2</p><p>2</p>
+       <p>2</p><p>2</p><p>2</p><p>2</p><p>2</p><p>3</p><p>4</p><p>4</p>
+     </div> 
+    <div class="fot">111</div>
+   </div>    
+  </div>
+<!--   右 -->
+  <div class="rig"></div>
+</div>
+
+</body>
+</html>
