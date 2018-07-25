@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>二进制</title>
+</head>
+<body>
+<!-- 1.实现点击按钮时，将输入的十进制数字转化为二进制，并显示在result的p标签内
+     2.若bin-bit输入的字数==dec-number输入的数字一样，那么转化的二进制长度需要=输入的字数长度，如不够长，前面加0
+     3.若bin-bit输入的字数<dec-number输入的数字,那么直接输出转化的二进制-->
+	<input id="dec-number" type="number" placeholder="输入一个十进制非负整数">
+    <input id="bin-bit" type="number" placeholder="输入转化后二进制数字位数">
+    <button id="trans-btn">转化为二进制</button>
+    <p id="result">运算结果</p>
+    <script type="text/javascript">
+    	
+function dec2bin(decNumber) {
+	// 获得页面的元素
+var num1=document.getElementById("dec-number"),
+    btn=document.getElementById("trans-btn"),
+    result=document.getElementById("result"),
+    bin=document.getElementById("bin-bit");
+    // 按钮点击后执行的命令
+      btn.onclick=function(){
+      	// 获得2个输入框的value值，而且必须要整数
+        var a=parseInt(num1.value);
+        var b=parseInt(bin.value);
+        // 如果二进制的输入框非负整数
+       if(a>0){
+       	// 并且2个输入框值相同的时候
+         if(a==b){
+           // a的二进制赋值给c
+           var c=a.toString(2);
+           //创建一个空数组,放置0
+           var d=[];
+           // 循环，从二进制的长度开始，循环截止在b实际的长度
+           for(var i=c.length;i<b;i++){
+           	// 循环一次，给数组添加一个0
+            d.push(0);
+           }
+           // 输出数组转化成字符串+已转化的二进制
+           result.innerHTML="运算结果："+d.join("")+c;
+          
+         }
+         // 如果a>b
+         else if(a>b){
+         	// 直接输出二进制
+            result.innerHTML="运算结果："+a.toString(2);
+            console.log("不相等");
+         }
+         // 如果b>a，就报错
+         else{
+           console.log("no");
+         } 
+       }
+       // 如果a<0,就报错
+       else{
+         console.log("wrong");
+       }
+      }
+}
+dec2bin();
+    
+
+    // 从1到100，以此在console输出各数字，但是，当数字为3的倍数或者含有3的时候，输出“PA”
+    
+//     for(var i=1;i<100;i++){ 
+//     //3的倍数   含有3的数字  30以内的数字
+// 	  if(i%3==0 || i%10==3 || i>30&&i<40)
+// 	  {
+// 	    console.log("pa");
+// 	  }else{
+// 	    console.log(i);
+// 	  }
+// }
+    </script>
+</body>
+</html>
