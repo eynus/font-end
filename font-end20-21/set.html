@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	.all{
+       /* background: #aaa;*/
+		width:90%;
+		height:480px;
+		margin:10px auto;
+		position:relative;
+		/*overflow: hidden;*/
+	}
+	.bg{
+		background: url("erik_ce204002.jpg") no-repeat;
+		width: 480px;
+		height: 480px;
+		background-position:0px 0px;
+	}
+	</style>
+</head>
+<body>
+<div class="all">
+	<p class="bg"></p>
+</div>
+<script>
+	window.onload=function(){
+		var bg=document.querySelector(".bg")
+		var a=0;
+		var index=0;
+		var time=setInterval(function(){
+			if(a==0){
+				bg.style.backgroundPosition="0px "+index*(-480)+"px";
+				index++;
+				if(index==16){
+					a=1;
+				}
+			}else{
+				bg.style.backgroundPosition="0px "+index*(-480)+"px";
+				index--;
+				if(index==0){
+					a=0;
+				}
+			}
+		},100);
+		}
+</script>
+</body>
+</html>
